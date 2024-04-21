@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    tools:context=".loginActivity"
+    android:gravity="center"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#00000125"
+        app:cardElevation="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inicio Sesion"
+                android:textColor="#bd6000"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textAlignment="center"
+
+
+                />
+            <EditText
+                android:id="@+id/cajaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Usuario"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/cardview_dark_background"
+
+                />
+            <EditText
+                android:id="@+id/cajaContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/cardview_dark_background"
+
+                />
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Ingresar"
+                android:backgroundTint="#321b0c"
+                android:textSize="20dp"
+                app:cornerRadius="20dp"
+
+
+
+
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Aun no estas Registrado?"
+        android:textColor="#6d71ee"
+        android:textSize="18sp"
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:id="@+id/lbRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Registrate Ahora!"
+        android:textColor="#03041b"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:textAlignment="center"
+        android:layout_marginTop="-2dp"
+        android:onClick="evento"
+
+
+
+        />
+
+</LinearLayout>
